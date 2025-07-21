@@ -99,7 +99,7 @@ const Services = () => {
           </div>
 
           {/* Right Content: Image + Cards */}
-          <div className="flex flex-col items-center w-full max-w-[500px] mx-auto lg:items-end lg:self-end">
+          <div className="flex flex-col items-center w-full max-w-[500px] ml-auto lg:items-end lg:self-end">
             <div className="flex flex-col gap-8 w-full">
               {SERVICES.map((service) => (
                 <ServiceCard
