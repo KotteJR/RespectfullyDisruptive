@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="h-screen flex flex-col items-center justify-center bg-white px-6 -mt-16 pt-16">
       {/* Hero Title */}
-      <div className="relative mb-14 w-full text-center">
+      <div className="relative mb-10 w-full text-center">
         <video
           autoPlay
           loop
