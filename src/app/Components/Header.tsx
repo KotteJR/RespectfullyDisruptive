@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState('Home');
@@ -32,7 +33,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Pricing', href: '/pricing' },
-    { name: 'Contact', href: '/contact' }
+    { name: 'Contact', href: '/#contact-section' }
   ];
 
   return (
@@ -44,20 +45,20 @@ export default function Header() {
       <div className="max-w-[1240px] mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img 
               src="/RD/rd.svg" 
               alt="RD Logo"
               className="h-8 w-auto"
             />
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="flex items-center space-x-8">
             {navLinks.map((link) => (
-              <button
+              <Link
                 key={link.name}
-                onClick={() => setActiveLink(link.name)}
+                href={link.href}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   activeLink === link.name
                     ? 'text-[#239D68]'
@@ -65,7 +66,7 @@ export default function Header() {
                 }`}
               >
                 {link.name}
-              </button>
+              </Link>
             ))}
           </nav>
         </div>

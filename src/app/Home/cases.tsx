@@ -43,7 +43,7 @@ export default function Cases() {
             Explore Our Work
           </h2>
           <p className="text-md text-gray-700 w-full md:max-w-[590px] leading-relaxed text-justify">
-            Discover how we've empowered companies to launch, grow, and transform their digital products with innovative strategies, robust technology, and creative solutions tailored for real business impact.
+            Discover how we&apos;ve empowered companies to launch, grow, and transform their digital products with innovative strategies, robust technology, and creative solutions tailored for real business impact.
           </p>
         </div>
 
