@@ -1,0 +1,125 @@
+'use client';
+
+import { useState } from 'react';
+
+export default function Cases() {
+  // Case Studies Data
+  const CASE_STUDIES = [
+    {
+      id: 1,
+      title: "Grupo IB 360: Complete Digital Overhaul",
+      description: "We revamped Grupo IB 360's online presence, migrating from WordPress to a modern Next.js frontend with Payload CMS. The redesign boosts performance, flexibility, and aligns with their premium position in hospitality and enterprise tech.",
+      images: [
+        "/cases/grupo/1.png",
+        "/cases/grupo/2.png", 
+        "/cases/grupo/3.png"
+      ],
+      keywords: ["Intuitive Analytics", "Full Visibility", "Domain Authentication"],
+      liveUrl: "#",
+      readMoreUrl: "#"
+    },
+    {
+      id: 2,
+      title: "Milan Matkonsult AB", 
+      description: "Complete development lifecycle management with integrated CI/CD, monitoring, and deployment tools for modern applications.",
+      images: [
+        "/cases/milan/1.jpg",
+        "/cases/milan/1.jpg", 
+        "/cases/milan/1.jpg"
+      ],
+      keywords: ["CI/CD Pipeline", "App Monitoring", "Auto Scaling"],
+      liveUrl: "#",
+      readMoreUrl: "#"
+    }
+  ];
+
+  // Always show all case studies
+  const visibleCaseStudies = CASE_STUDIES;
+
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-[1240px] mx-auto px-6">
+        {/* Header - now stacked: title, then description below */}
+        <div className="mb-12 flex flex-col items-start gap-2 w-full">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#239D68' }}>
+            Explore Our Work
+          </h2>
+          <p className="text-md text-gray-700 w-full md:max-w-[590px] leading-relaxed text-justify">
+            Discover how we've empowered companies to launch, grow, and transform their digital products with innovative strategies, robust technology, and creative solutions tailored for real business impact.
+          </p>
+        </div>
+
+        {/* Case Studies Stack */}
+        <div>
+          {visibleCaseStudies.map((caseStudy, idx) => (
+            <div key={caseStudy.id} className="flex flex-col items-center w-full">
+              <div className="w-full">
+                {/* Images */}
+                <div>
+                  <div className="bg-white rounded-3xl py-3 mb-5">
+                    <div className="h-[350px] overflow-x-auto overflow-y-hidden scrollbar-hide">
+                      <div className="flex h-full w-max gap-6">
+                        {caseStudy.images.map((image, index) => (
+                          <div key={index} className="flex-shrink-0 w-full max-w-[590px] h-full">
+                            <img 
+                              src={image} 
+                              alt={`${caseStudy.title} - Image ${index + 1}`}
+                              className="w-full h-full object-cover rounded-2xl border border-gray-200"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="w-full flex flex-col md:flex-row md:items-start md:gap-8">
+                  {/* Description */}
+                  <div className="w-full md:w-[590px]">
+                    <h3 className="text-2xl md:text-2xl font-bold text-gray-900 mb-4 text-left md:text-left">{caseStudy.title}</h3>
+                    <p className="text-md text-gray-700 leading-relaxed text-justify md:text-justify">
+                      {caseStudy.description}
+                    </p>
+                    {/* Keywords */}
+                    <div className="flex flex-wrap gap-2 mt-4 md:mt-6 justify-left md:justify-left">
+                      {caseStudy.keywords.map((keyword, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-2 bg-gray-100 rounded-full text-xs font-medium text-gray-900 h-7 flex items-center"
+                        >
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+                    {/* Action Buttons */}
+                    <div className="flex flex-row gap-2 mt-4 justify-left w-auto">
+                      <button 
+                        onClick={() => window.open(caseStudy.liveUrl, '_blank')}
+                        className="px-4 py-2 bg-blue-500 text-white rounded-full text-xs font-medium hover:bg-blue-600 transition-colors h-7 flex items-center"
+                      >
+                        Live Site
+                      </button>
+                      <button 
+                        onClick={() => window.open(caseStudy.readMoreUrl, '_blank')}
+                        className="px-4 py-2 bg-[#239D68]/90 text-white rounded-full text-xs font-medium hover:bg-[#239D68]/100 transition-colors h-7 flex items-center"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Divider, except after last case */}
+              {idx !== visibleCaseStudies.length - 1 && (
+                <div className="w-full mx-auto">
+                  <div className="h-px bg-gray-100 my-16" />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
