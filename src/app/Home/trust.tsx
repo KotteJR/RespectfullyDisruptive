@@ -2,12 +2,12 @@
 
 export default function Trust() {
   return (
-    <section className="py-2 mb-18 bg-white">
+    <section className="py-2 mb-18 bg-white dark:bg-neutral-900">
       <div className="max-w-[1240px] mx-auto px-6">
         {/* Header Text */}
         <div className="text-center mb-10">
           <h2 className="text-xl md:text-xl text-gray-500 mb-2 tracking-tight">
-            Trusted by companies worldwide
+            See who we work with
           </h2>
         </div>
 
