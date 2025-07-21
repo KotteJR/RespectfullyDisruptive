@@ -75,14 +75,16 @@ export default function Cases() {
 
                 {/* Content */}
                 <div className="w-full flex flex-col md:flex-row md:items-start md:gap-8">
-                  {/* Description */}
-                  <div className="w-full md:w-[590px]">
-                    <h3 className="text-2xl md:text-2xl font-bold text-gray-900 mb-4 text-left md:text-left">{caseStudy.title}</h3>
-                    <p className="text-md text-gray-700 leading-relaxed text-justify md:text-justify">
+                  {/* Left: Title + Description */}
+                  <div className="w-full md:w-1/2">
+                    <h3 className="text-2xl md:text-2xl font-bold text-gray-900 mb-4 text-left">{caseStudy.title}</h3>
+                    <p className="text-md text-gray-700 leading-relaxed text-justify">
                       {caseStudy.description}
                     </p>
-                    {/* Keywords */}
-                    <div className="flex flex-wrap gap-2 mt-4 md:mt-6 justify-left md:justify-left">
+                  </div>
+                  {/* Right: Labels + Buttons */}
+                  <div className="w-full md:w-1/2 flex flex-col items-start md:items-end mt-6 md:mt-0">
+                    <div className="flex flex-wrap gap-2 md:justify-end">
                       {caseStudy.keywords.map((keyword, index) => (
                         <span
                           key={index}
@@ -92,8 +94,7 @@ export default function Cases() {
                         </span>
                       ))}
                     </div>
-                    {/* Action Buttons */}
-                    <div className="flex flex-row gap-2 mt-4 justify-left w-auto">
+                    <div className="flex flex-row gap-2 mt-4 md:justify-end">
                       <button 
                         onClick={() => window.open(caseStudy.liveUrl, '_blank')}
                         className="px-4 py-2 bg-blue-500 text-white rounded-full text-xs font-medium hover:bg-blue-600 transition-colors h-7 flex items-center"
