@@ -1,14 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-
 export default function Cases() {
   // Case Studies Data
   const CASE_STUDIES = [
     {
       id: 1,
       title: "Grupo IB 360: Complete Digital Overhaul",
-      description: "We revamped Grupo IB 360's online presence, migrating from WordPress to a modern Next.js frontend with Payload CMS. The redesign boosts performance, flexibility, and aligns with their premium position in hospitality and enterprise tech.",
+      description: "We revamped Grupo IB 360&apos;s online presence, migrating from WordPress to a modern Next.js frontend with Payload CMS. The redesign boosts performance, flexibility, and aligns with their premium position in hospitality and enterprise tech.",
       images: [
         "/cases/grupo/1.png",
         "/cases/grupo/2.png", 

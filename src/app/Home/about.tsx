@@ -8,7 +8,7 @@ export default function About() {
             What We Are
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl">
-            We've led fundraising, strategic advisory, and deal structuring. Each engagement 
+            We&apos;ve led fundraising, strategic advisory, and deal structuring. Each engagement 
             is tailored to match the capital logic investors expect — not just founder vision.
           </p>
         </div>

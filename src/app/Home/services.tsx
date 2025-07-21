@@ -135,11 +135,5 @@ const ServiceCard = ({ icon, title, bullets }: { icon: React.ReactNode, title: s
   </div>
 );
 
-const Tag = ({ children } : { children: React.ReactNode }) => (
-    <span className="bg-gray-100 border border-gray-200 text-gray-900 px-4 py-2 rounded-full text-sm flex items-center gap-2 font-medium">
-        {children}
-    </span>
-)
-
 
 export default Services; 

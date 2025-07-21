@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Subtitle */}
       <div className="mb-12">
         <p className="text-xl md:text-xl text-gray-700 text-center max-w-5xl leading-relaxed">
-        We launch new ventures and modernize established ones—aligning strategy, capital, tech, and brand under one roof. Whether you're building from scratch or rebuilding to stay relevant, we deliver full-stack execution without the handovers.
+        We launch new ventures and modernize established ones—aligning strategy, capital, tech, and brand under one roof. Whether you&apos;re building from scratch or rebuilding to stay relevant, we deliver full-stack execution without the handovers.
         </p>
       </div>
 
