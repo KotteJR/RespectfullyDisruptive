@@ -6,27 +6,30 @@ export default function Cases() {
     {
       id: 1,
       title: "Grupo IB 360: Complete Digital Overhaul",
-      description: "We revamped Grupo IB 360&apos;s online presence, migrating from WordPress to a modern Next.js frontend with Payload CMS. The redesign boosts performance, flexibility, and aligns with their premium position in hospitality and enterprise tech.",
+      description: "We revamped Grupo IB 360s online presence, migrating from WordPress to a modern Next.js frontend with Payload CMS. The redesign boosts performance, flexibility, and aligns with their premium position in hospitality and enterprise tech.",
       images: [
         "/cases/grupo/1.png",
         "/cases/grupo/2.png", 
-        "/cases/grupo/3.png"
+        "/cases/grupo/3.png",
+        "/cases/grupo/5.png"
       ],
-      keywords: ["Intuitive Analytics", "Full Visibility", "Domain Authentication"],
+      keywords: ["Strategy", "Design", "Engineering", "Scale"],
       liveUrl: "#",
       readMoreUrl: "#"
     },
     {
       id: 2,
-      title: "Milan Matkonsult AB", 
-      description: "Complete development lifecycle management with integrated CI/CD, monitoring, and deployment tools for modern applications.",
+      title: "Milan Mätkonsult AB – Digital Presence Revamp", 
+      description: "We delivered a complete digital presence revamp for Milan Mätkonsult AB, a leader in precision engineering and surveying in Sweden, with a design to reflect their technical credibility and market leadership, with a focus on clean design, SEO, and scalability.",
       images: [
-        "/cases/milan/1.jpg",
-        "/cases/milan/1.jpg", 
-        "/cases/milan/1.jpg"
+        "/cases/milan/1.png",
+        "/cases/milan/2.png",
+        "/cases/milan/3.png",
+        "/cases/milan/4.png",
+        
       ],
-      keywords: ["CI/CD Pipeline", "App Monitoring", "Auto Scaling"],
-      liveUrl: "#",
+      keywords: ["Strategy", "Design", "Engineering", "Scale"],
+      liveUrl: "https://milanmatkonsult.se",
       readMoreUrl: "#"
     }
   ];
@@ -55,10 +58,10 @@ export default function Cases() {
                 {/* Images */}
                 <div>
                   <div className="bg-white rounded-3xl py-3 mb-5">
-                    <div className="h-[350px] overflow-x-auto overflow-y-hidden scrollbar-hide">
+                    <div className="h-[300px] md:h-[350px] overflow-x-auto overflow-y-hidden scrollbar-hide">
                       <div className="flex h-full w-max gap-6">
                         {caseStudy.images.map((image, index) => (
-                          <div key={index} className="flex-shrink-0 w-full max-w-[590px] h-full">
+                          <div key={index} className="flex-shrink-0 w-[90vw] md:w-full max-w-[590px] h-full">
                             <img 
                               src={image} 
                               alt={`${caseStudy.title} - Image ${index + 1}`}
