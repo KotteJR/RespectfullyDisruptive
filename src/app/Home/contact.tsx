@@ -4,7 +4,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact-section" className="py-16 bg-white dark:bg-neutral-900 font-inter">
+    <section id="contact-section" className="py-16 bg-white font-inter">
       <div className="max-w-[1240px] mx-auto px-6">
         <div className="relative rounded-[3rem] overflow-hidden w-full" style={{ minHeight: 420 }}>
           {/* Video Background */}
@@ -19,9 +19,9 @@ const Contact = () => {
             <source src="/videos/background1.mp4" type="video/mp4" />
           </video>
           {/* Black overlay for text contrast */}
-          <div className="absolute inset-0 bg-black/50 z-0" />
+          <div className="absolute inset-0 bg-black/30 z-0" />
           {/* Content */}
-          <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-20 bg-black/10" style={{ minHeight: 420 }}>
+          <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-20" style={{ minHeight: 420 }}>
             <h2 className="text-white text-3xl md:text-5xl font-bold mb-6 leading-tight" style={{fontFamily: 'inherit'}}>Ready to Elevate Your Digital Presence?</h2>
             <p className="text-md text-white mb-10 max-w-2xl mx-auto">
               Lets turn your vision into reality with designs that inspire, strategies that work, and development that delivers. Partner with us to make your mark online.

@@ -57,7 +57,7 @@ const SERVICES = [
 
 const Services = () => {
   return (
-    <section className="bg-white dark:bg-neutral-900 text-gray-900 py-20 font-inter">
+    <section className="bg-white text-gray-900 py-20 font-inter">
       <div className="max-w-[1240px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}

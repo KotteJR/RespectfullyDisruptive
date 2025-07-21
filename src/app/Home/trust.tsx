@@ -2,7 +2,7 @@
 
 export default function Trust() {
   return (
-    <section className="py-2 mb-18 bg-white dark:bg-neutral-900">
+    <section className="py-2 mb-18 bg-white">
       <div className="max-w-[1240px] mx-auto px-6">
         {/* Header Text */}
         <div className="text-center mb-10">

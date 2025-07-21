@@ -4,22 +4,18 @@ export default function Hero() {
   return (
     <section className="h-screen flex flex-col items-center justify-center bg-white px-6 -mt-16 pt-16">
       {/* Hero Title */}
-      <div className="relative mb-14">
-        <h1 className="text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-inter font-bold leading-none text-center">
-          <span 
-            className="bg-clip-text text-transparent"
-                         style={{
-               backgroundImage: `url('/videos/background1.mp4')`,
-               backgroundSize: '250%', // Zoomed in - try 120%, 150%, 200% etc.
-               backgroundPosition: 'center',
-               backgroundRepeat: 'no-repeat',
-               WebkitBackgroundClip: 'text',
-               WebkitTextFillColor: 'transparent',
-               backgroundClip: 'text',
-             }}
-          >
-            Strategy to Scale.
-          </span>
+      <div className="relative mb-14 w-full text-center">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="/videos/background1.mp4" type="video/mp4" />
+        </video>
+        <h1 className="text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-inter font-bold leading-none text-center text-black bg-white mix-blend-screen p-4">
+          Strategy to Scale.
         </h1>
       </div>
 
