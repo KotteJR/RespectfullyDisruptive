@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function PricingPage() {
   return (
@@ -29,7 +30,7 @@ export default function PricingPage() {
               Our pricing plans are coming soon. Contact us for more info.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/#contact-section" className="group bg-black text-white text-lg font-medium rounded-full px-8 py-3 flex items-center gap-3 hover:bg-gray-900 transition-all duration-300">
+              <Link href="/#contact-section" className="group bg-black text-white text-lg font-medium rounded-full px-8 py-3 flex items-center gap-3 hover:bg-gray-900 transition-all duration-300">
                 Contact us
                 <svg 
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
@@ -44,7 +45,7 @@ export default function PricingPage() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3" 
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
