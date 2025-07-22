@@ -41,11 +41,11 @@ export default function Cases() {
     <section className="py-20 bg-white">
       <div className="max-w-[1240px] mx-auto px-6">
         {/* Header - now stacked: title, then description below */}
-        <div className="mb-12 flex flex-col items-start gap-2 w-full">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#239D68' }}>
+        <div className="mb-12 flex flex-col items-center gap-2 w-full">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center" style={{ color: '#239D68' }}>
             Explore Our Work
           </h2>
-          <p className="text-md text-gray-700 w-full md:max-w-[590px] leading-relaxed text-justify">
+          <p className="text-md text-gray-700 w-full md:max-w-[590px] leading-relaxed text-center">
             Discover how we&apos;ve empowered companies to launch, grow, and transform their digital products with innovative strategies, robust technology, and creative solutions tailored for real business impact.
           </p>
         </div>

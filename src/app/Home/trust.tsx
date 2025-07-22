@@ -2,7 +2,7 @@
 
 export default function Trust() {
   return (
-    <section className="py-2 mb-18 bg-white">
+    <section className="py-6 pb-12 bg-white dark:bg-transparent">
       <div className="max-w-[1240px] mx-auto px-6">
         {/* Header Text */}
         <div className="text-center mb-10">
@@ -14,8 +14,8 @@ export default function Trust() {
         {/* Scrolling Logos Container */}
         <div className="relative overflow-hidden">
           {/* Blur effects */}
-          <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none dark:from-transparent dark:to-transparent"></div>
+          <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none dark:from-transparent dark:to-transparent"></div>
 
           {/* Top Row - Adamass logos scrolling right */}
           <div className="flex animate-scroll-right mb-8">
