@@ -45,7 +45,7 @@ export default function Cases() {
           <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center" style={{ color: '#239D68' }}>
             Explore Our Work
           </h2>
-          <p className="text-md text-gray-700 w-full md:max-w-[590px] leading-relaxed text-center">
+          <p className="text-md text-gray-700 w-full md:max-w-[650px] leading-relaxed text-center">
             Discover how we&apos;ve empowered companies to launch, grow, and transform their digital products with innovative strategies, robust technology, and creative solutions tailored for real business impact.
           </p>
         </div>
@@ -58,10 +58,10 @@ export default function Cases() {
                 {/* Images */}
                 <div>
                   <div className="bg-white rounded-3xl py-3 mb-5">
-                    <div className="h-[300px] md:h-[350px] overflow-x-auto overflow-y-hidden scrollbar-hide">
+                    <div className="h-[280px] md:h-[290px] overflow-x-auto overflow-y-hidden scrollbar-hide">
                       <div className="flex h-full w-max gap-6">
                         {caseStudy.images.map((image, index) => (
-                          <div key={index} className="flex-shrink-0 w-[90vw] md:w-full max-w-[590px] h-full">
+                          <div key={index} className="flex-shrink-0 w-[90vw] md:w-full max-w-[550px] h-full">
                             <img 
                               src={image} 
                               alt={`${caseStudy.title} - Image ${index + 1}`}
