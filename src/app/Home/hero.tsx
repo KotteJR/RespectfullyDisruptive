@@ -29,7 +29,7 @@ export default function Hero() {
       {/* CTA Button */}
       <div>
         <button
-          className="group bg-gray-900 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 flex items-center gap-3"
+          className="group bg-black text-white text-lg font-medium rounded-full px-8 py-3 flex items-center gap-3 hover:bg-gray-900 transition-all duration-300"
           onClick={() => {
             const el = document.getElementById('contact-section');
             if (el) el.scrollIntoView({ behavior: 'smooth' });

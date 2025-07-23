@@ -98,13 +98,13 @@ export default function Cases() {
                     <div className="flex flex-row gap-2 mt-4 md:justify-end">
                       <button 
                         onClick={() => window.open(caseStudy.liveUrl, '_blank')}
-                        className="px-4 py-2 bg-blue-500 text-white rounded-full text-xs font-medium hover:bg-blue-600 transition-colors h-7 flex items-center"
+                        className="px-4 py-2 bg-gray-800 text-white rounded-full text-xs font-medium hover:bg-gray-900 transition-all duration-300 h-7 flex items-center"
                       >
                         Live Site
                       </button>
                       <button 
                         onClick={() => window.open(caseStudy.readMoreUrl, '_blank')}
-                        className="px-4 py-2 bg-[#239D68]/90 text-white rounded-full text-xs font-medium hover:bg-[#239D68]/100 transition-colors h-7 flex items-center"
+                        className="px-4 py-2 bg-[#239D68]/95 text-white rounded-full text-xs font-medium hover:bg-[#239D68]/100 transition-all duration-300 h-7 flex items-center"
                       >
                         Read More
                       </button>

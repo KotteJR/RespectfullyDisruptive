@@ -62,8 +62,9 @@ const Services = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}
           <div className="space-y-8 lg:sticky lg:top-25 mt-4 lg:mt-0 max-w-[590px] w-full">
-            <span className="inline-block bg-[#E6F4EF] text-[#239D68] px-3 py-1 rounded-full text-sm font-medium">
-              ◉ Why RD?
+            <span className="inline-flex bg-[#E6F4EF] text-[#239D68] px-4 py-2 rounded-full text-sm font-medium items-center gap-2">
+              <img src="/RD/logonotext.svg" alt="RD Logo" className="w-5 h-5" />
+              Why Choose RD?
             </span>
             <h1 className="text-5xl md:text-6xl font-bold text-[#239D68]">Who We Are</h1>
             <p className="text-md text-justify text-gray-700 max-w-[590px] leading-relaxed">
@@ -80,7 +81,7 @@ const Services = () => {
                     'Strategy', 'Branding', 'UI/UX', 'Development', 'Infrastructure', 'Automation', 'Conversion',
                     'Strategy', 'Branding', 'UI/UX', 'Development', 'Infrastructure', 'Automation', 'Conversion'
                   ].map(tag => (
-                    <span key={tag + Math.random()} className="bg-gray-100 text-gray-900 px-5 py-2 rounded-full text-md inline-block">
+                    <span key={tag + Math.random()} className="bg-gray-100 text-gray-900 px-5 py-2 rounded-full text-sm inline-block">
                        {tag}
                      </span>
                   ))}
@@ -92,7 +93,7 @@ const Services = () => {
                   100% { transform: translateX(0%); }
                 }
                 .animate-labels-scroll {
-                  animation: labels-scroll 20s linear infinite;
+                  animation: labels-scroll 15s linear infinite;
                 }
               `}</style>
             </div>
