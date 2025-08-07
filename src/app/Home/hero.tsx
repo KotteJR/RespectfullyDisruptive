@@ -22,16 +22,16 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
         <div className="text-center max-w-6xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6">
             Strategy to Scale.
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed mb-8 max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl px-4 md:text-2xl text-gray-200 leading-relaxed mb-8 max-w-4xl mx-auto">
             We build new ventures and modernize existing ones—aligning strategy, capital, tech, and brand under one roof. From zero to scale or reinvention, we deliver full-stack execution without handovers.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="w-full max-w-[500px] mx-auto px-4 grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-4 justify-center mt-6">
             <a 
               href="#contact-section" 
-              className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30"
+              className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 w-full sm:w-auto flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30"
             >
               Book a Call
               <svg 
@@ -50,7 +50,7 @@ export default function Hero() {
             </a>
             <a 
               href="#cases-section" 
-              className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30"
+              className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 w-full sm:w-auto flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30"
             >
               Our Projects
               <svg 
