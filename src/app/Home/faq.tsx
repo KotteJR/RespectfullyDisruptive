@@ -27,7 +27,7 @@ const FAQ_DATA = [
 ];
 
 const FAQ = () => {
-  const [openIndexes, setOpenIndexes] = useState<number[]>([0]);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([0, 1]);
 
   const toggleFAQ = (index: number) => {
     setOpenIndexes(prevIndexes =>

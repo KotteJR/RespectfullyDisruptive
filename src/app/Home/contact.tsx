@@ -27,7 +27,7 @@ const Contact = () => {
               Lets turn your vision into reality with designs that inspire, strategies that work, and development that delivers. Partner with us to make your mark online.
             </p>*/}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#" className="group bg-black text-white text-lg font-medium rounded-lg px-8 py-3 flex items-center gap-3 hover:bg-gray-900 hover:cursor-pointer transition-all duration-300 mt-4">
+              <a href="#" className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 w-full sm:w-auto flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30 mt-4">
                 Book a call
                 <svg 
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
