@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ height: '100dvh' }}>
       {/* Video background */}
       <video
         autoPlay
@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 h-full flex items-center justify-center">
         <div className="text-center max-w-6xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight mb-6">
             Strategy to Scale.
