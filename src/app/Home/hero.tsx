@@ -33,7 +33,7 @@ export default function Hero() {
               href="#contact-section" 
               className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 w-full sm:w-auto flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30"
             >
-              Book a Call
+              <span className="sm:hidden text-sm">Book a Call</span><span className="hidden sm:inline">Book a Call</span>
               <svg 
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
                 fill="none" 
@@ -52,7 +52,7 @@ export default function Hero() {
               href="#cases-section" 
               className="group bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-lg px-8 py-3 w-full sm:w-auto flex items-center justify-center gap-3 hover:bg-white/20 transition-all duration-300 border border-white/30"
             >
-              Our Projects
+              <span className="sm:hidden text-sm">Our Projects</span><span className="hidden sm:inline">Our Projects</span>
               <svg 
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
                 fill="none" 
