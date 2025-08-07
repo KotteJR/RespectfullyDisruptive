@@ -56,13 +56,37 @@ const SERVICES = [
 ];
 
 const Services = () => {
+  const leftRef = React.useRef<HTMLDivElement>(null);
+  const [leftHeight, setLeftHeight] = React.useState<number | undefined>(undefined);
+
+  React.useEffect(() => {
+    if (!leftRef.current) return;
+
+    // Set initial height
+    setLeftHeight(leftRef.current.offsetHeight);
+
+    // Observe size changes of the left column
+    const resizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (entry) {
+        setLeftHeight(entry.contentRect.height);
+      }
+    });
+
+    resizeObserver.observe(leftRef.current);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, []);
+
   return (
     <section className="bg-white text-gray-900 py-20 font-inter">
       <div className="max-w-[1240px] mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           {/* Left Content */}
-          <div className="space-y-8 lg:sticky lg:top-25 mt-4 lg:mt-0 max-w-[590px] w-full">
-            <span className="inline-flex bg-[#E6F4EF] text-[#239D68] px-4 py-2 rounded-full text-sm font-medium items-center gap-2">
+          <div ref={leftRef} className="space-y-6 lg:sticky lg:top-25 mt-4 lg:mt-0 max-w-[550px] w-full">
+            <span className="inline-flex bg-[#E6F4EF] text-[#239D68] px-4 py-2 rounded-lg text-sm font-medium items-center gap-2 mt-2">
               <img src="/RD/logonotext.svg" alt="RD Logo" className="w-5 h-5" />
               Why Choose RD?
             </span>
@@ -81,7 +105,7 @@ const Services = () => {
                     'Strategy', 'Branding', 'UI/UX', 'Development', 'Infrastructure', 'Automation', 'Conversion',
                     'Strategy', 'Branding', 'UI/UX', 'Development', 'Infrastructure', 'Automation', 'Conversion'
                   ].map(tag => (
-                    <span key={tag + Math.random()} className="bg-gray-100 text-gray-900 px-5 py-2 rounded-full text-sm inline-block">
+                    <span key={tag + Math.random()} className="bg-gray-100 text-gray-900 px-5 py-2 rounded-lg text-sm inline-block">
                        {tag}
                      </span>
                   ))}
@@ -100,14 +124,15 @@ const Services = () => {
           </div>
 
           {/* Right Content: Image + Cards */}
-          <div className="flex flex-col items-center w-full max-w-[500px] ml-auto lg:items-end lg:self-end">
-            <div className="flex flex-col gap-8 w-full">
+          <div className="flex flex-col items-center w-full max-w-[550px] ml-auto lg:items-end lg:self-end">
+            <div className="flex flex-col gap-10 w-full">
               {SERVICES.map((service) => (
                 <ServiceCard
                   key={service.title}
                   icon={service.icon}
                   title={service.title}
                   bullets={service.bullets}
+                  cardHeight={leftHeight}
                 />
               ))}
             </div>
@@ -119,8 +144,8 @@ const Services = () => {
   );
 };
 
-const ServiceCard = ({ icon, title, bullets }: { icon: React.ReactNode, title: string, bullets: string[] }) => (
-  <div className="bg-white border border-gray-200 rounded-2xl p-8 space-y-4">
+const ServiceCard = ({ icon, title, bullets, cardHeight }: { icon: React.ReactNode, title: string, bullets: string[], cardHeight?: number }) => (
+  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col justify-center space-y-4" style={{ minHeight: cardHeight ? cardHeight : undefined }} >
     <div>{icon}</div>
     <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
     <ul className="space-y-3 mt-2">

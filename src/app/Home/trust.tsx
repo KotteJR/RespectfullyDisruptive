@@ -6,8 +6,8 @@ export default function Trust() {
       <div className="max-w-[1240px] mx-auto px-6">
         {/* Header Text */}
         <div className="text-center mb-10">
-          <h2 className="text-xl md:text-xl text-gray-500 mb-2 tracking-tight">
-            See who we work with
+          <h2 className="text-lg md:text-lg text-gray-500 mb-2 tracking-tight">
+          Trusted by Industry Leaders
           </h2>
         </div>
 

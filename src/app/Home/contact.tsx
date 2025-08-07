@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id="contact-section" className="py-16 bg-white font-inter">
       <div className="max-w-[1240px] mx-auto px-6">
-        <div className="relative rounded-[3rem] overflow-hidden w-full" style={{ minHeight: 420 }}>
+        <div className="relative rounded-2xl overflow-hidden w-full" style={{ minHeight: 420 }}>
           {/* Video Background */}
           <video
             autoPlay
@@ -27,7 +27,7 @@ const Contact = () => {
               Lets turn your vision into reality with designs that inspire, strategies that work, and development that delivers. Partner with us to make your mark online.
             </p>*/}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#" className="group bg-black text-white text-lg font-medium rounded-full px-8 py-3 flex items-center gap-3 hover:bg-gray-900 transition-all duration-300 mt-4">
+              <a href="#" className="group bg-black text-white text-lg font-medium rounded-lg px-8 py-3 flex items-center gap-3 hover:bg-gray-900 hover:cursor-pointer transition-all duration-300 mt-4">
                 Book a call
                 <svg 
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
