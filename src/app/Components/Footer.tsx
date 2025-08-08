@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="text-center space-y-2">
             <p className="text-gray-700 text-xs leading-relaxed">
-              Copyright © 2024 Respectfully Disruptive. <br/> All rights reserved.
+              Copyright © 2025 Respectfully Disruptive. <br/> All rights reserved.
             </p>
           </div>
         </div>
